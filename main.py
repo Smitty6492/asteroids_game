@@ -20,6 +20,12 @@ def main():
     print(f"Screen width: {SCREEN_WIDTH}")
     print(f"Screen height: {SCREEN_HEIGHT}")
     
+    # Create groups
+    updatables = pygame.sprite.Group()
+    drawables = pygame.sprite.Group()
+    Player.containers = (updatables, drawables)
+    
+    
     # ✅ Create the player in the center of the screen
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
 
@@ -32,11 +38,17 @@ def main():
         
         
         
-        player.update(dt)           # ✅ Add this line
+        #player.update(dt)           # ✅ Add this line
         
-        # Draw the Game
+        # Draw the 
+        updatables.update(dt)
         screen.fill("black")  # Fill the screen with black
-        player.draw(screen)   # ✅ Draw the player
+        
+        for obj in drawables:
+            obj.draw(screen)
+        
+        
+        #player.draw(screen)   # ✅ Draw the player
         pygame.display.flip() # Refresh the screen
         
         # ✅ Cap at 60 FPS and store delta time
