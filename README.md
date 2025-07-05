@@ -56,7 +56,7 @@ uv add pygame==2.6.1
 uv run main.py
 ```
 
-##🧩 Project Structure
+## 🧩 Project Structure
 
 boots_asteroids/
 
