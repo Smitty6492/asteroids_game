@@ -87,4 +87,6 @@ boots_asteroids/
 *Add a main menu and restart option
 
 📸 Screenshot
-![Gameplay Screenshot](screenshot.png)
+<p align="center">
+  <img src="screenshot.png" alt="Gameplay Screenshot" width="500"/>
+</p>
