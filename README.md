@@ -70,15 +70,24 @@ boots_asteroids/
 
 
 ⚙️ Features Implemented
+
 ✅ Game loop with input, update, and draw steps
+
 ✅ Pygame sprite Groups for clean object management
+
 ✅ Collision detection between player, bullets, and asteroids
+
 ✅ Asteroid splitting logic with randomized velocities
+
 ✅ Bullet rate limiting with cooldown timer
+
 ✅ Object-oriented structure using inheritance (CircleShape)
+
 ✅ Delta-time movement for consistent gameplay speed
 
+
 📚 What I Learned
+
 📌Project structure with multiple files: Organizing code into modules (player.py, asteroid.py, etc.) improves readability and maintainability.
 
 📌Using classes and inheritance: Created a CircleShape base class to share common behaviors like collision detection.
@@ -94,11 +103,16 @@ boots_asteroids/
 📌Version control with Git and GitHub: Learned to commit often, manage branches, and resolve merge conflicts.
 
 🧪 Future Ideas
-*Add sound effects
-*Track score and high scores
-*Add lives and power-ups
-*Implement screen wraparound
-*Add a main menu and restart option
+
+🛠️Add sound effects
+
+🛠️Track score and high scores
+
+🛠️Add lives and power-ups
+
+🛠️Implement screen wraparound
+
+🛠️Add a main menu and restart option
 
 📸 Screenshot
 <p align="center">
