@@ -56,16 +56,26 @@ uv add pygame==2.6.1
 uv run main.py
 ```
 
-🧩 Project Structure
+##🧩 Project Structure
+
 boots_asteroids/
 │
 ├── main.py                # Main game loop
+
 ├── constants.py           # All global constants
+
 ├── player.py              # Player spaceship logic
+
 ├── asteroid.py            # Asteroid object + split logic
+
 ├── asteroidfield.py       # Asteroid spawner
+
 ├── shot.py                # Bullet logic
+
 ├── circleshape.py         # Base class with collision detection
+
+├── screenshot.png         # screenshot of game play 
+
 ├── README.md              # You're here!
 
 
