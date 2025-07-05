@@ -7,10 +7,10 @@ from constants import *
 from player import Player
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
+from shot import Shot
 
 
 def main():
-    
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     pygame.display.set_caption("Boots Asteroids")
@@ -27,11 +27,13 @@ def main():
     updatables = pygame.sprite.Group()
     drawables = pygame.sprite.Group()
     asteroids = pygame.sprite.Group()
+    shots = pygame.sprite.Group()
     
     # Attach groups to classes
     Player.containers = (updatables, drawables)
     Asteroid.containers = (asteroids, updatables, drawables)
     AsteroidField.containers = (updatables,)  # only updatable
+    Shot.containers = (shots, updatables, drawables)
     
     
     # ✅ Create the player in the center of the screen
@@ -52,6 +54,8 @@ def main():
         # Draw the 
         updatables.update(dt)
         
+        
+                    
         # Check for collisions between player and asteroids
         for asteroid in asteroids:
             if player.collides_with(asteroid):
@@ -59,6 +63,13 @@ def main():
                 #pygame.quit()
                 sys.exit()
                 #return
+            
+            # Check for bullets hitting asteroids
+            for bullet in shots:
+                if asteroid.collides_with(bullet):
+                    asteroid.split()  # instead of kill
+                    bullet.kill()
+                
         
         screen.fill("black")  # Fill the screen with black
         
