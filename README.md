@@ -59,7 +59,9 @@ uv run main.py
 ##🧩 Project Structure
 
 boots_asteroids/
+
 │
+
 ├── main.py                # Main game loop
 
 ├── constants.py           # All global constants
