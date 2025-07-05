@@ -69,7 +69,7 @@ boots_asteroids/
 ├── README.md              # You're here!
 
 
-⚙️ Features Implemented
+## ⚙️ Features Implemented
 
 ✅ Game loop with input, update, and draw steps
 
@@ -86,7 +86,7 @@ boots_asteroids/
 ✅ Delta-time movement for consistent gameplay speed
 
 
-📚 What I Learned
+## 📚 What I Learned
 
 📌Project structure with multiple files: Organizing code into modules (player.py, asteroid.py, etc.) improves readability and maintainability.
 
@@ -102,7 +102,7 @@ boots_asteroids/
 
 📌Version control with Git and GitHub: Learned to commit often, manage branches, and resolve merge conflicts.
 
-🧪 Future Ideas
+## 🧪 Future Ideas
 
 🛠️Add sound effects
 
@@ -114,7 +114,7 @@ boots_asteroids/
 
 🛠️Add a main menu and restart option
 
-📸 Screenshot
+## 📸 Screenshot
 <p align="center">
   <img src="screenshot.png" alt="Gameplay Screenshot" width="500"/>
 </p>
