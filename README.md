@@ -78,6 +78,20 @@ boots_asteroids/
 ✅ Object-oriented structure using inheritance (CircleShape)
 ✅ Delta-time movement for consistent gameplay speed
 
+📚 What I Learned
+📌Project structure with multiple files: Organizing code into modules (player.py, asteroid.py, etc.) improves readability and maintainability.
+
+📌Using classes and inheritance: Created a CircleShape base class to share common behaviors like collision detection.
+
+📌Managing game objects with Pygame Groups: Simplified updating and drawing by grouping sprites, keeping the game loop clean.
+
+📌Handling user input and delta time: Used Pygame’s input system and delta time (dt) to ensure smooth, consistent movement regardless of frame rate.
+
+📌Implementing game mechanics: Developed shooting, asteroid splitting, and collision detection step-by-step.
+
+📌Working with virtual environments and dependencies: Used uv to manage a Python virtual environment and install Pygame without conflicts.
+
+📌Version control with Git and GitHub: Learned to commit often, manage branches, and resolve merge conflicts.
 
 🧪 Future Ideas
 *Add sound effects
