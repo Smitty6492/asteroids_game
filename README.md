@@ -40,6 +40,7 @@ A Python + Pygame clone of the classic *Asteroids* game, built step-by-step with
 ```bash
 git clone https://github.com/YOUR-USERNAME/boots_asteroids.git
 cd boots_asteroids
+```
 
 ### 2. Set Up the Environment
 
@@ -47,13 +48,13 @@ cd boots_asteroids
 uv venv
 source .venv/bin/activate
 uv add pygame==2.6.1
-
+```
 -----> Make sure the virtual environment is activated when running the game!
 
 ### 3. Run the Game
 ```bash
 uv run main.py
-
+```
 
 🧩 Project Structure
 boots_asteroids/
